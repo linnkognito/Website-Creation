@@ -1,26 +1,101 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    ---font-dosis: 'Dosis', sans-serif;
+    ---font-qs: 'Quicksand', sans-serif;
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @theme inline {
+    --color-plum-50: #fdf4fd;
+    --color-plum-100: #f8e9fb;
+    --color-plum-200: #f1d1f6;
+    --color-plum-300: #e7aeee;
+    --color-plum-400: #cd75dd;
+    --color-plum-500: #b653c7;
+    --color-plum-600: #973bab;
+    --color-plum-700: #7a2f8a;
+    --color-plum-800: #64266f;
+    --color-plum-900: #4e1e56;
+    --color-plum-950: #35133b;
+
+    --font-sans: var(--font-dosis);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
+  }
+
+  body {
+    font-family: var(--font-qs);
+    font-weight: 600;
+    font-size: 18px;
+  }
+  button {
+    font-family: var(--font-qs);
+  }
+  h2 {
+    @apply text-4xl md:text-5xl font-black;
+  }
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  p {
+    @apply text-lg/relaxed;
+  }
+
+  ::selection {
+    @apply text-violet-50 bg-indigo-500;
+  }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .flex-center-col {
+    @apply flex flex-col items-center justify-center;
+  }
+  .flex-col-gap {
+    @apply flex flex-col gap-3;
+  }
+
+  .w-section {
+    @apply max-w-[1000px];
+  }
+
+  .p-section {
+    @apply px-8 py-7;
+  }
+  .p-div {
+    @apply px-5 py-4;
+  }
+  .p-par {
+    @apply pl-2 pr-3;
+  }
+  .p-heading {
+    @apply pl-1;
+  }
+  .p-button {
+    @apply px-6 py-[0.2em];
+  }
+
+  .text-button {
+    @apply font-bold text-[1.1rem] text-indigo-950;
+  }
+
+  .shadow-ind {
+    @apply shadow-lg shadow-indigo-600;
+  }
+  .shadow-fusch {
+    @apply shadow-lg shadow-fuchsia-400/50;
+  }
+
+  .border-full {
+    @apply border-2 border-white rounded-full;
+  }
+  .border-pri {
+    @apply border-2 border-white;
+  }
 }
