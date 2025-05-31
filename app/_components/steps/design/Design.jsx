@@ -8,15 +8,15 @@ function Design() {
   return (
     <Section
       aria-labelledby='design-heading'
-      className=' text-indigo-950 bg-gradient-to-r from-indigo-50  to-plum-200 shadow-ind'
+      className=' text-indigo-950 bg-lime-200 shadow-ind'
     >
       <div>
         <div>
           <h2
             id='design-heading'
-            className='flex gap-2 p-heading text-violet-950'
+            className='flex gap-2 p-heading text-indigo-950'
           >
-            Step 2: Design
+            Step 3: Design
           </h2>
           <DividerHorizontal color='dark' className='lg:w-8/10' />
         </div>
@@ -27,7 +27,11 @@ function Design() {
           </Paragraph>
           <Paragraph>
             If you already have a{' '}
-            <AnchorLink href='https://www.figma.com/' title='Figma.com'>
+            <AnchorLink
+              href='https://www.figma.com/'
+              title='Figma.com'
+              className='hover:underline'
+            >
               Figma
             </AnchorLink>{' '}
             file, wireframe, or design direction, I can start translating it

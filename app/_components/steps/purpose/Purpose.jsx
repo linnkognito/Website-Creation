@@ -34,7 +34,7 @@ function Purpose() {
               key={q.id}
               question={q.question}
               example={q.examples}
-              className={`text-indigo-950 border-full ${q.styles}`}
+              className={`text-indigo-950 ${q.styles}`}
             />
           ))}
         </ul>

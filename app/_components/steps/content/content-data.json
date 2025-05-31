@@ -1,0 +1,30 @@
+[
+  {
+    "title": "You upload the inital content yourself",
+    "description": "I’ll still handle all the coding — but instead of using real content, I’ll create placeholders where your content will go.",
+    "tooltips": {
+      "lightbulb": {
+        "title": "What I’ll need from you",
+        "text": "A list of the types of content you want to include (e.g. text, images, videos), and how important or prominent each one should be."
+      },
+      "check": {
+        "title": "What you'll get",
+        "text": "I’ll create a layout document based on your input, which I’ll use to build the wireframe. You’ll also get a copy for reference."
+      }
+    }
+  },
+  {
+    "title": "I upload the initial content for you",
+    "description": "I’ll take care of both the coding and uploading your real content — no placeholders needed.",
+    "tooltips": {
+      "lightbulb": {
+        "title": "What I’ll need from you",
+        "text": "All the content you want included: text, images, videos, and anything else you'd like featured. You can send it in whatever format works best (Docs, Figma, folders, etc.)."
+      },
+      "check": {
+        "title": "What you'll get",
+        "text": "I’ll organize and implement your content directly into the site, using it to guide the wireframe and layout from the start."
+      }
+    }
+  }
+]

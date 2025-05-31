@@ -4,7 +4,7 @@ import Design from './_components/steps/design/Design';
 
 function Page() {
   return (
-    <article className='flex flex-col gap-10'>
+    <article className='flex flex-col gap-12 md:gap-20'>
       <Purpose />
       <Content />
       <Design />
