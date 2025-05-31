@@ -1,19 +1,19 @@
-import Section from '../containers/Section';
-import DividerHorizontal from '../DividerHorizontal';
-import Paragraph from '../Paragraph';
-import Cube from '../containers/Cube';
-import AnchorLink from '../AnchorLink';
+import Section from '../../containers/Section';
+import DividerHorizontal from '../../DividerHorizontal';
+import Paragraph from '../../Paragraph';
+import Cube from '../../containers/Cube';
+import AnchorLink from '../../AnchorLink';
 
-function Step3() {
+function Design() {
   return (
     <Section
-      aria-labelledby='step2-heading'
+      aria-labelledby='design-heading'
       className=' text-indigo-950 bg-gradient-to-r from-indigo-50  to-plum-200 shadow-ind'
     >
       <div>
         <div>
           <h2
-            id='step2-heading'
+            id='design-heading'
             className='flex gap-2 p-heading text-violet-950'
           >
             Step 2: Design
@@ -95,4 +95,4 @@ function Step3() {
   );
 }
 
-export default Step3;
+export default Design;

@@ -1,13 +1,13 @@
-import Step1 from './_components/steps/Step1';
-import Step2 from './_components/steps/Step2';
-import Step3 from './_components/steps/Step3';
+import Purpose from './_components/steps/purpose/Purpose';
+import Content from './_components/steps/content/Content';
+import Design from './_components/steps/design/Design';
 
 function Page() {
   return (
     <article className='flex flex-col gap-10'>
-      <Step1 />
-      <Step2 />
-      <Step3 />
+      <Purpose />
+      <Content />
+      <Design />
       {/* <Step4 />
       <Step5 />
       <Step6 />

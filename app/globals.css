@@ -31,20 +31,27 @@
 
   body {
     font-family: var(--font-qs);
-    font-weight: 600;
-    font-size: 18px;
+  }
+  body {
+    @apply font-semibold;
   }
   button {
     font-family: var(--font-qs);
   }
   h2 {
-    @apply text-4xl md:text-5xl font-black;
+    @apply text-3xl md:text-4xl font-black;
   }
   h3 {
     @apply text-2xl font-bold;
   }
+  h4 {
+    @apply text-xl font-black;
+  }
+  h5 {
+    @apply text-lg font-black;
+  }
   p {
-    @apply text-lg/relaxed;
+    @apply text-base md:text-lg/relaxed;
   }
 
   ::selection {
@@ -71,11 +78,20 @@
   .p-div {
     @apply px-5 py-4;
   }
+  .p-div-sm {
+    @apply px-3 py-2;
+  }
+  .p-div-lg {
+    @apply px-7 py-6;
+  }
   .p-par {
     @apply pl-2 pr-3;
   }
   .p-heading {
     @apply pl-1;
+  }
+  .p-heading-rev {
+    @apply pr-1;
   }
   .p-button {
     @apply px-6 py-[0.2em];
@@ -90,6 +106,9 @@
   }
   .shadow-fusch {
     @apply shadow-lg shadow-fuchsia-400/50;
+  }
+  .shadow-subtle {
+    @apply shadow-md shadow-indigo-700/30;
   }
 
   .border-full {
