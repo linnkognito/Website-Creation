@@ -110,6 +110,9 @@
   .shadow-subtle {
     @apply shadow-md shadow-indigo-700/30;
   }
+  .shadow-glow-ind {
+    box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.4);
+  }
 
   .border-full {
     @apply border-2 border-white rounded-full;

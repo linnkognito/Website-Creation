@@ -1,6 +1,7 @@
 import Purpose from './_components/steps/purpose/Purpose';
 import Content from './_components/steps/content/Content';
 import Design from './_components/steps/design/Design';
+import StaticCode from './_components/steps/static-code/StaticCode';
 
 function Page() {
   return (
@@ -8,10 +9,7 @@ function Page() {
       <Purpose />
       <Content />
       <Design />
-      {/* <Step4 />
-      <Step5 />
-      <Step6 />
-      <Step7 /> */}
+      <StaticCode />
     </article>
   );
 }

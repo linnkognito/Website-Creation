@@ -1,10 +1,11 @@
 import data from './content-data';
 
+import { CursorArrowRaysIcon } from '@heroicons/react/24/outline';
 import Section from '../../containers/Section';
 import DividerHorizontal from '../../DividerHorizontal';
 import Paragraph from '../../Paragraph';
-import AccordionTemplate from './AccordionTemplate';
-import { CursorArrowRaysIcon } from '@heroicons/react/24/outline';
+import AccordionTemplate from '../../containers/AccordionTemplate';
+import InfoText from '../../containers/InfoText';
 
 function Content() {
   return (
@@ -15,7 +16,7 @@ function Content() {
       {/* Accordions */}
       <div className='order-2 lg:order-1 flex-center-col gap-3'>
         {data.map((accordion) => (
-          <AccordionTemplate data={accordion} />
+          <AccordionTemplate key={accordion.id} data={accordion} />
         ))}
       </div>
 
@@ -41,10 +42,9 @@ function Content() {
             initial content.
           </Paragraph>
 
-          <Paragraph className='flex gap-1 font-black'>
-            <CursorArrowRaysIcon className='h-6' />
+          <InfoText icon={CursorArrowRaysIcon}>
             Click each option to learn more.
-          </Paragraph>
+          </InfoText>
 
           <DividerHorizontal color='dark' className='lg:w-8/10' />
         </div>

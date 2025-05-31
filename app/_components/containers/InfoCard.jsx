@@ -1,6 +1,6 @@
 import Paragraph from '../Paragraph';
 
-function Tooltip({ children, title = '', icon: Icon, color = 'indigo' }) {
+function InfoCard({ children, title = '', icon: Icon, color = 'indigo' }) {
   const colors = {
     indigo: {
       icon: 'bg-indigo-500',
@@ -45,4 +45,4 @@ function Tooltip({ children, title = '', icon: Icon, color = 'indigo' }) {
   );
 }
 
-export default Tooltip;
+export default InfoCard;

@@ -1,8 +1,9 @@
 [
   {
+    "id": "self-uploads-content",
     "title": "You upload the inital content yourself",
     "description": "I’ll still handle all the coding — but instead of using real content, I’ll create placeholders where your content will go.",
-    "tooltips": {
+    "infoCards": {
       "lightbulb": {
         "title": "What I’ll need from you",
         "text": "A list of the types of content you want to include (e.g. text, images, videos), and how important or prominent each one should be."
@@ -14,9 +15,10 @@
     }
   },
   {
+    "id": "dev-uploads-content",
     "title": "I upload the initial content for you",
     "description": "I’ll take care of both the coding and uploading your real content — no placeholders needed.",
-    "tooltips": {
+    "infoCards": {
       "lightbulb": {
         "title": "What I’ll need from you",
         "text": "All the content you want included: text, images, videos, and anything else you'd like featured. You can send it in whatever format works best (Docs, Figma, folders, etc.)."

@@ -1,13 +1,13 @@
 import { CheckCircleIcon, LightBulbIcon } from '@heroicons/react/24/outline';
 import Accordion from '@/app/_components/containers/Accordion';
-import Tooltip from '@/app/_components/containers/Tooltip';
+import InfoCard from '@/app/_components/containers/InfoCard';
 import DividerHorizontal from '@/app/_components/DividerHorizontal';
 import Paragraph from '@/app/_components/Paragraph';
 
 function AccordionTemplate({ data }) {
   if (!data) return;
 
-  const { title, description, tooltips } = data;
+  const { title, description, infoCards } = data;
 
   return (
     <Accordion title={title}>
@@ -15,23 +15,23 @@ function AccordionTemplate({ data }) {
       <Paragraph>{description}</Paragraph>
       <DividerHorizontal color='dark' />
 
-      {/* Tooltips */}
+      {/* InfoCards */}
       <div className='flex-col-gap'>
-        <Tooltip
-          title={tooltips.lightbulb.title}
+        <InfoCard
+          title={infoCards.lightbulb.title}
           icon={LightBulbIcon}
           color='indigo'
         >
-          {tooltips.lightbulb.text}
-        </Tooltip>
+          {infoCards.lightbulb.text}
+        </InfoCard>
 
-        <Tooltip
-          title={tooltips.check.title}
+        <InfoCard
+          title={infoCards.check.title}
           icon={CheckCircleIcon}
           color='lime'
         >
-          {tooltips.check.text}
-        </Tooltip>
+          {infoCards.check.text}
+        </InfoCard>
       </div>
     </Accordion>
   );

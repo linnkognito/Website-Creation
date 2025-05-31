@@ -3,12 +3,14 @@ import DividerHorizontal from '../../DividerHorizontal';
 import Paragraph from '../../Paragraph';
 import Cube from '../../containers/Cube';
 import AnchorLink from '../../AnchorLink';
+import InfoText from '../../containers/InfoText';
+import { StarIcon } from '@heroicons/react/24/outline';
 
 function Design() {
   return (
     <Section
       aria-labelledby='design-heading'
-      className=' text-indigo-950 bg-lime-200 shadow-ind'
+      className=' text-indigo-950 bg-gradient-to-br from-lime-200 to-white shadow-ind'
     >
       <div>
         <div>
@@ -21,9 +23,9 @@ function Design() {
           <DividerHorizontal color='dark' className='lg:w-8/10' />
         </div>
 
-        <div className='flex flex-col gap-1'>
+        <div className='flex-col-gap'>
           <Paragraph>
-            Now it’s time to figure out what everything should look like.
+            Now it’s time to figure out the look and feel of your site.
           </Paragraph>
           <Paragraph>
             If you already have a{' '}
@@ -34,17 +36,19 @@ function Design() {
             >
               Figma
             </AnchorLink>{' '}
-            file, wireframe, or design direction, I can start translating it
-            into code right away.
+            file or design direction, I can jump straight into coding.
           </Paragraph>
           <Paragraph>
-            If not, no worries — I can design it for you. Anything that helps
-            guide the vibe is welcome: keywords, color palettes, moodboards, or
-            even links to sites you love.
+            If not, I’ll design it for you — just send anything helpful:
+            keywords, color palettes, inspo links, etc. You’ll get a mockup to
+            review and tweak until it’s just right.
           </Paragraph>
 
-          <DividerHorizontal color='dark' className='lg:w-8/10' />
+          <InfoText icon={StarIcon}>
+            Once approved, I’ll move on to Step 4.
+          </InfoText>
         </div>
+        <DividerHorizontal color='dark' className='lg:w-8/10' />
       </div>
 
       <div className='grid grid-cols-[1fr_1fr] gap-1'>

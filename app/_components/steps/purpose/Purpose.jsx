@@ -2,7 +2,7 @@ import questions from './purpose-data';
 
 import Section from '../../containers/Section';
 import Paragraph from '../../Paragraph';
-import QuestionAnswer from '../../QuestionAnswer';
+import InfoStrip from '../../containers/InfoStrip';
 import TextContent from '../../containers/TextContent';
 
 function Purpose() {
@@ -29,13 +29,13 @@ function Purpose() {
       {/* Example questions */}
       <div className='flex-col-gap items-center justify-center h-full'>
         <ul className='flex-col-gap z-10'>
-          {questions.map((q) => (
-            <QuestionAnswer
-              key={q.id}
-              question={q.question}
-              example={q.examples}
-              className={`text-indigo-950 ${q.styles}`}
-            />
+          {questions.map((question) => (
+            <InfoStrip
+              key={question.id}
+              className={`text-indigo-950 ${question.styles}`}
+            >
+              {question.question}
+            </InfoStrip>
           ))}
         </ul>
       </div>
