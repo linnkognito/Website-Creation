@@ -1,4 +1,4 @@
-import Paragraph from '../Paragraph';
+import Paragraph from '../text/Paragraph';
 
 function InfoCard({ children, title = '', icon: Icon, color = 'indigo' }) {
   const colors = {

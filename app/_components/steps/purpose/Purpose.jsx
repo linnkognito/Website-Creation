@@ -1,7 +1,7 @@
 import questions from './purpose-data';
 
 import Section from '../../containers/Section';
-import Paragraph from '../../Paragraph';
+import Paragraph from '../../text/Paragraph';
 import InfoStrip from '../../containers/InfoStrip';
 import TextContent from '../../containers/TextContent';
 

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "refactor",
+    "text": "Refactor and clean up the code",
+    "styles": "bg-indigo-50 border-full shadow-sm shadow-indigo-800"
+  },
+  {
+    "id": "performance",
+    "text": "Optimize for faster load times",
+    "styles": "bg-indigo-100 shadow-sm shadow-indigo-800"
+  },
+  {
+    "id": "accessibility",
+    "text": "Improve accessibility for all users",
+    "styles": "bg-indigo-200 shadow-sm shadow-indigo-800"
+  },
+  {
+    "id": "seo",
+    "text": "Enhance SEO so your site is easier to find",
+    "styles": "bg-indigo-300 shadow-sm shadow-indigo-800"
+  },
+  {
+    "id": "testing",
+    "text": "Test across multiple screen sizes and browsers",
+    "styles": "bg-indigo-400 shadow-sm shadow-indigo-800"
+  }
+]

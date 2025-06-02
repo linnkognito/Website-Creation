@@ -1,4 +1,4 @@
-import Paragraph from '../Paragraph';
+import Paragraph from '../text/Paragraph';
 
 function InfoText({ children, icon: Icon }) {
   return (

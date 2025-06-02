@@ -68,12 +68,12 @@
     @apply flex flex-col gap-3;
   }
 
-  .w-section {
+  .max-w-section {
     @apply max-w-[1000px];
   }
 
   .p-section {
-    @apply px-8 py-7;
+    @apply px-7 sm:px-12 py-7;
   }
   .p-div {
     @apply px-5 py-4;
@@ -109,6 +109,9 @@
   }
   .shadow-subtle {
     @apply shadow-md shadow-indigo-700/30;
+  }
+  .shadow-subtle-dark {
+    @apply shadow-md shadow-indigo-950/80;
   }
   .shadow-glow-ind {
     box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.4);

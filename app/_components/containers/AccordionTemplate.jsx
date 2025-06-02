@@ -2,7 +2,7 @@ import { CheckCircleIcon, LightBulbIcon } from '@heroicons/react/24/outline';
 import Accordion from '@/app/_components/containers/Accordion';
 import InfoCard from '@/app/_components/containers/InfoCard';
 import DividerHorizontal from '@/app/_components/DividerHorizontal';
-import Paragraph from '@/app/_components/Paragraph';
+import Paragraph from '@/app/_components/text/Paragraph';
 
 function AccordionTemplate({ data }) {
   if (!data) return;

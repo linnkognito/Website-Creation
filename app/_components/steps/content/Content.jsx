@@ -3,7 +3,7 @@ import data from './content-data';
 import { CursorArrowRaysIcon } from '@heroicons/react/24/outline';
 import Section from '../../containers/Section';
 import DividerHorizontal from '../../DividerHorizontal';
-import Paragraph from '../../Paragraph';
+import Paragraph from '../../text/Paragraph';
 import AccordionTemplate from '../../containers/AccordionTemplate';
 import InfoText from '../../containers/InfoText';
 

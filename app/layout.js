@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`px-5 py-4 bg-violet-300 ${dosis.variable} ${qs.variable} antialiased`}
+        className={`px-3 sm:px-5 py-4 bg-violet-300 ${dosis.variable} ${qs.variable} antialiased`}
       >
         <Header />
         <main className='flex-center w-full max-w-screen'>{children}</main>

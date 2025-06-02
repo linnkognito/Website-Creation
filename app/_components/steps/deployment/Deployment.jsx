@@ -1,17 +1,23 @@
+import Image from 'next/image';
 import Section from '../../containers/Section';
 import DividerHorizontal from '../../DividerHorizontal';
 import Paragraph from '../../text/Paragraph';
-import CodeSnippet from './CodeSnippet';
 
-function StaticCode() {
+function Deployment() {
   return (
     <Section
       aria-labelledby='content-heading'
       className=' text-indigo-950 bg-indigo-500 shadow-ind selection:bg-violet-50 selection:text-indigo-500'
     >
-      {/* Code */}
-      <div className='order-2 lg:order-1 flex-center-col gap-3 h-full text-xs sm:text-base'>
-        <CodeSnippet />
+      {/* Image */}
+      <div className='order-2 lg:order-1 flex-center-col gap-3 h-full'>
+        <Image
+          src='/deployment.png'
+          alt='Laptop illustration showing deployment'
+          width={1152}
+          height={768}
+          className='w-full h-auto object-contain max-w-3xl border-5 border-white rounded-2xl shadow-subtle-dark'
+        />
       </div>
 
       {/* Description */}
@@ -21,29 +27,24 @@ function StaticCode() {
             id='content-heading'
             className='flex gap-2 p-heading-rev text-violet-50'
           >
-            Step 4: Coding
+            Step 7: Deployment
           </h2>
           <DividerHorizontal className='lg:w-8/10' />
         </div>
 
         <div className='flex flex-col gap-3 lg:items-end text-indigo-50'>
           <Paragraph>
-            Time for you to take it easy and for me to start coding.
+            For the final step, we’ll launch your site into the real world.
           </Paragraph>
           <Paragraph>
-            I will start with the static parts of the website. It will look
-            exactly like your approved design, and I will add things like
-            responsiveness (so it scales nicely from mobile to bigger devices),
-            hover effects etc.
+            Once everything is finalized and tested, I’ll set up hosting and
+            connect your custom domain (if you have one). I’ll also make sure
+            everything is secure, fast, and ready for visitors.
           </Paragraph>
           <Paragraph>
-            You don't have to be a part of this process, but if you'd like code
-            reviews or more frequent updates - no problem!
+            After deployment, your site will be live and accessible to anyone —
+            and you’ll have everything you need to take it from there.
           </Paragraph>
-
-          {/* <InfoText icon={CursorArrowRaysIcon}>
-            Click each option to learn more.
-          </InfoText> */}
 
           <DividerHorizontal className='lg:w-8/10' />
         </div>
@@ -52,4 +53,4 @@ function StaticCode() {
   );
 }
 
-export default StaticCode;
+export default Deployment;

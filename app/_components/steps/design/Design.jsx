@@ -1,8 +1,8 @@
 import Section from '../../containers/Section';
 import DividerHorizontal from '../../DividerHorizontal';
-import Paragraph from '../../Paragraph';
+import Paragraph from '../../text/Paragraph';
 import Cube from '../../containers/Cube';
-import AnchorLink from '../../AnchorLink';
+import AnchorLink from '../../text/AnchorLink';
 import InfoText from '../../containers/InfoText';
 import { StarIcon } from '@heroicons/react/24/outline';
 
@@ -51,13 +51,13 @@ function Design() {
         <DividerHorizontal color='dark' className='lg:w-8/10' />
       </div>
 
-      <div className='grid grid-cols-[1fr_1fr] gap-1'>
+      <div className='grid sm:grid-cols-[1fr_1fr] gap-1'>
         <a
           href='https://fonts.google.com/'
           alt='Link to Google Fonts'
           title='Google web fonts'
         >
-          <Cube className='flex-center bg-gradient-to-r hover:contrast-120 will-change-[color] duration-400 ease-in-out from-indigo-500 to-plum-200 md:aspect-auto lg:aspect-square'>
+          <Cube className='flex-center bg-gradient-to-r hover:contrast-120 will-change-[color] duration-400 ease-in-out from-indigo-500 to-plum-200'>
             <h3 className='text-4xl sm:text-5xl md:text-4xl font-black'>
               Fonts
             </h3>
@@ -68,7 +68,7 @@ function Design() {
           alt='Link to Coolors trending color palettes'
           title='Color palette ideas'
         >
-          <Cube className='flex-center bg-gradient-to-r hover:contrast-120 will-change-[color] duration-400 ease-in-out from-lime-200 to-plum-200 md:aspect-auto lg:aspect-square'>
+          <Cube className='flex-center bg-gradient-to-r hover:contrast-120 will-change-[color] duration-400 ease-in-out from-lime-200 to-plum-200'>
             <h3 className='text-4xl sm:text-5xl md:text-4xl font-black'>
               Colors
             </h3>
@@ -80,7 +80,7 @@ function Design() {
           alt='Link to search results for webdesign on Dribbble'
           title='Webdesign inspiration'
         >
-          <Cube className='flex-center bg-gradient-to-r from-white to-plum-200 md:aspect-auto lg:aspect-square hover:contrast-120 will-change-[color] duration-400 ease-in-out '>
+          <Cube className='flex-center bg-gradient-to-r from-white to-plum-200 hover:contrast-120 will-change-[color] duration-400 ease-in-out '>
             <h3 className='text-4xl sm:text-5xl md:text-4xl font-black'>
               Design
             </h3>
@@ -92,7 +92,7 @@ function Design() {
           alt='Link to Mockflow - a wireframing application'
           title='Online wireframe creator'
         >
-          <Cube className='flex-center bg-gradient-to-r from-plum-300  to-plum-200 md:aspect-auto lg:aspect-square hover:contrast-120 will-change-[color] duration-400 ease-in-out '>
+          <Cube className='flex-center bg-gradient-to-r from-plum-300  to-plum-200 hover:contrast-120 will-change-[color] duration-400 ease-in-out '>
             <h3 className='text-4xl sm:text-5xl md:text-4xl font-black'>
               Layout
             </h3>

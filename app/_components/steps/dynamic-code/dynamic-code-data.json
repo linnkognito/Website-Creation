@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Sanity",
+    "subTitle": "Best for flexibility and design control",
+    "description": "Sanity lets me fully customize the editing experience to match your site’s layout and needs. It's clean, fast, and easy to use once set up — you’ll only see what you need.",
+    "bulletPoints": [
+      { "id": "customized-editor", "text": "Tailored editing experience" },
+      {
+        "id": "great-for-structured-content",
+        "text": "Great for structured content like portfolios or blogs"
+      },
+      {
+        "id": "requires-sanity-account",
+        "text": "Requires a free Sanity account to use"
+      }
+    ]
+  },
+  {
+    "title": "Contentful",
+    "subTitle": "Great if you want a polished interface out of the box",
+    "description": "Contentful has a modern dashboard and is easy to learn. It’s less customizable than Sanity but still works well for most content types.",
+    "bulletPoints": [
+      { "id": "easy-to-use", "text": "Intuitive interface" },
+      {
+        "id": "simple-management",
+        "text": "Good for simple content management"
+      },
+      {
+        "id": "limited-layout-control",
+        "text": "Slightly more limited layout control"
+      }
+    ]
+  },
+  {
+    "title": "WordPress",
+    "subTitle": "Familiar and powerful if you've used WordPress before",
+    "description": "WordPress is widely known and great for larger or blog-heavy sites. It offers tons of features, but can feel a bit clunky compared to the others.",
+    "bulletPoints": [
+      { "id": "familiar", "text": "Familiar to many users" },
+      {
+        "id": "large-site-suitable",
+        "text": "Great for managing lots of content"
+      },
+      {
+        "id": "can-be-clunky",
+        "text": "Can be slower or more complex to maintain"
+      }
+    ]
+  }
+]
