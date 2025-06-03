@@ -11,7 +11,7 @@ function Nav({ links }) {
   const navLinks = links || defaultLinks;
 
   return (
-    <nav className='w-fit mx-auto mt-4 mb-8'>
+    <nav className='fixed flex-center top-0 w-full pt-4 pb-5 z-100 bg-violet-300 border-b-2 border-indigo-50/50'>
       <ul className='flex gap-3'>
         {navLinks.map((li) => (
           <li key={li.label}>

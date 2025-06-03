@@ -9,6 +9,7 @@ import HeadingInfo from '../../text/HeadingInfo';
 function TestingOptimization() {
   return (
     <Section
+      theme='2col'
       aria-labelledby='design-heading'
       className=' text-indigo-950 bg-gradient-to-br from-lime-200 to-white shadow-ind'
     >

@@ -5,25 +5,18 @@ import Cube from '../../containers/Cube';
 import AnchorLink from '../../text/AnchorLink';
 import InfoText from '../../containers/InfoText';
 import { StarIcon } from '@heroicons/react/24/outline';
+import HeadingSection from '../../text/HeadingSection';
+import SectionTextContent from '../../containers/SectionTextContent';
+import Description from '../../text/Description';
+import SectionSideContent from '../../containers/SectionSideContent';
 
 function Design() {
   return (
-    <Section
-      aria-labelledby='design-heading'
-      className=' text-indigo-950 bg-gradient-to-br from-lime-200 to-white shadow-ind'
-    >
-      <div>
-        <div>
-          <h2
-            id='design-heading'
-            className='flex gap-2 p-heading text-indigo-950'
-          >
-            Step 3: Design
-          </h2>
-          <DividerHorizontal color='dark' className='lg:w-8/10' />
-        </div>
+    <Section theme='2col' color='lime' aria-labelledby='design-heading'>
+      <SectionTextContent>
+        <HeadingSection id='design-heading'>Step 3: Design</HeadingSection>
 
-        <div className='flex-col-gap'>
+        <Description>
           <Paragraph>
             Now it’s time to figure out the look and feel of your site.
           </Paragraph>
@@ -47,11 +40,10 @@ function Design() {
           <InfoText icon={StarIcon}>
             Once approved, I’ll move on to Step 4.
           </InfoText>
-        </div>
-        <DividerHorizontal color='dark' className='lg:w-8/10' />
-      </div>
+        </Description>
+      </SectionTextContent>
 
-      <div className='grid sm:grid-cols-[1fr_1fr] gap-1'>
+      <SectionSideContent theme='cubes'>
         <a
           href='https://fonts.google.com/'
           alt='Link to Google Fonts'
@@ -98,7 +90,7 @@ function Design() {
             </h3>
           </Cube>
         </a>
-      </div>
+      </SectionSideContent>
     </Section>
   );
 }

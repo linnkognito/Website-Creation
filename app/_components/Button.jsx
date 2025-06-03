@@ -1,14 +1,33 @@
+'use client';
+
+import { motion } from 'framer-motion';
+
 function Button({ children, theme = 'border', className = '' }) {
   const styles = {
-    border: 'hover:bg-white',
+    border: 'text-indigo-900',
     fill: 'bg-white',
   };
+
   return (
-    <button
-      className={`p-button text-button border-full will-change-[color] duration-200 ease-in-out cursor-pointer ${styles[theme]} ${className}`}
+    <motion.button
+      whileHover='hover'
+      initial='rest'
+      animate='rest'
+      className={`relative overflow-hidden p-button text-button border-full cursor-pointer group ${styles[theme]} ${className}`}
     >
-      {children}
-    </button>
+      {/* Animated background layer */}
+      <motion.span
+        variants={{
+          rest: { x: '-100%' },
+          hover: { x: '0%' },
+        }}
+        transition={{ duration: 0.3, ease: 'easeInOut' }}
+        className='absolute inset-0 bg-white z-0'
+      />
+
+      {/* Button text stays above */}
+      <span className='relative z-10'>{children}</span>
+    </motion.button>
   );
 }
 

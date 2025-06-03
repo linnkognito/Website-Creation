@@ -2,10 +2,12 @@ import Image from 'next/image';
 import Section from '../../containers/Section';
 import DividerHorizontal from '../../DividerHorizontal';
 import Paragraph from '../../text/Paragraph';
+import HeadingSection from '../../text/HeadingSection';
 
 function Deployment() {
   return (
     <Section
+      theme='2col'
       aria-labelledby='content-heading'
       className=' text-indigo-950 bg-indigo-500 shadow-ind selection:bg-violet-50 selection:text-indigo-500'
     >
@@ -16,21 +18,15 @@ function Deployment() {
           alt='Laptop illustration showing deployment'
           width={1152}
           height={768}
-          className='w-full h-auto object-contain max-w-3xl border-5 border-white rounded-2xl shadow-subtle-dark'
+          className='w-full h-auto object-contain max-w-3xl border-5 border-white rounded-2xl shadow-subtle-dark contrast-135'
         />
       </div>
 
       {/* Description */}
       <div className='order-1 lg:order-2 lg:text-right'>
-        <div className='flex flex-col lg:items-end'>
-          <h2
-            id='content-heading'
-            className='flex gap-2 p-heading-rev text-violet-50'
-          >
-            Step 7: Deployment
-          </h2>
-          <DividerHorizontal className='lg:w-8/10' />
-        </div>
+        <HeadingSection invert={true} color='light'>
+          Step 7: Deployment
+        </HeadingSection>
 
         <div className='flex flex-col gap-3 lg:items-end text-indigo-50'>
           <Paragraph>

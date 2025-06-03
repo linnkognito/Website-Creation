@@ -22,7 +22,7 @@ function CodeSnippet() {
   `;
 
   return (
-    <div className='w-full max-w-full max-h-[400px] rounded-2xl overflow-hidden shadow-glow-ind'>
+    <div className='w-full max-w-full max-h-[400px] text-xs sm:text-base rounded-2xl overflow-hidden shadow-glow-ind'>
       <SyntaxHighlighter
         language='javascript'
         style={nightOwl}

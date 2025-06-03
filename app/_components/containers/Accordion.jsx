@@ -44,7 +44,7 @@ function Accordion({ children, icon: Icon, title }) {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.5, ease: 'easeInOut' }}
-            className='overflow-hidden flex-col-gap pr-8'
+            className='overflow-hidden flex-col-gap tracking-tight pr-8'
           >
             {children}
           </motion.div>

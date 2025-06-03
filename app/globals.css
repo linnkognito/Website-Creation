@@ -33,7 +33,7 @@
     font-family: var(--font-qs);
   }
   body {
-    @apply font-semibold;
+    @apply font-semibold tracking-tight;
   }
   button {
     font-family: var(--font-qs);

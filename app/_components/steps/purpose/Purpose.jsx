@@ -3,31 +3,32 @@ import questions from './purpose-data';
 import Section from '../../containers/Section';
 import Paragraph from '../../text/Paragraph';
 import InfoStrip from '../../containers/InfoStrip';
-import TextContent from '../../containers/TextContent';
+import HeadingSection from '../../text/HeadingSection';
+import Description from '../../text/Description';
+import SectionTextContent from '../../containers/SectionTextContent';
+import SectionSideContent from '../../containers/SectionSideContent';
 
 function Purpose() {
   return (
-    <Section
-      aria-labelledby='purpose-heading'
-      className='text-indigo-50 bg-indigo-500 shadow-ind selection:bg-violet-400'
-    >
-      <TextContent
-        title={{
-          heading: 'Step 1: Purpose & Direction',
-          color: 'text-violet-50',
-        }}
-      >
-        <Paragraph className='text-indigo-50'>
-          To kick things off, let’s figure out the core goals, audience, tone,
-          type of content and key features you want for your site.
-          <br />
-          This can be done over any chat client of your choice, email, voice or
-          video call, or face to face - totally up to you.
-        </Paragraph>
-      </TextContent>
+    <Section theme='2col' color='indigo' aria-labelledby='purpose-heading'>
+      <SectionTextContent>
+        <HeadingSection color='light'>
+          Step 1: Purpose & Direction
+        </HeadingSection>
+
+        <Description color='light'>
+          <Paragraph>
+            To kick things off, let’s figure out the core goals, audience, tone,
+            type of content and key features you want for your site.
+            <br />
+            This can be done over any chat client of your choice, email, voice
+            or video call, or face to face - totally up to you.
+          </Paragraph>
+        </Description>
+      </SectionTextContent>
 
       {/* Example questions */}
-      <div className='flex-col-gap items-center justify-center h-full'>
+      <SectionSideContent>
         <ul className='flex-col-gap z-10'>
           {questions.map((question) => (
             <InfoStrip
@@ -38,7 +39,7 @@ function Purpose() {
             </InfoStrip>
           ))}
         </ul>
-      </div>
+      </SectionSideContent>
     </Section>
   );
 }

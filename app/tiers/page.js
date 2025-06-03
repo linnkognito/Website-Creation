@@ -1,5 +1,11 @@
+import H1 from '../_components/text/H1';
+
 function Page() {
-  return <div>Tiers</div>;
+  return (
+    <article>
+      <H1>Tiers</H1>
+    </article>
+  );
 }
 
 export default Page;

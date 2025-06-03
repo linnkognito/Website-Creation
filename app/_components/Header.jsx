@@ -2,7 +2,7 @@ import Nav from './Nav';
 
 function Header() {
   return (
-    <header>
+    <header className='relative w-full mb-[90px]'>
       <Nav />
     </header>
   );

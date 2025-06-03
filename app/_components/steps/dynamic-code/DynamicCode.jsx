@@ -1,33 +1,26 @@
 import data from './dynamic-code-data';
 
+import { CursorArrowRaysIcon } from '@heroicons/react/24/outline';
 import Section from '../../containers/Section';
 import DividerHorizontal from '../../DividerHorizontal';
 import Paragraph from '../../text/Paragraph';
-import AccordionTemplate from '../../containers/AccordionTemplate';
 import AnchorLink from '../../text/AnchorLink';
 import Accordion from '../../containers/Accordion';
 import InfoText from '../../containers/InfoText';
-import { CursorArrowRaysIcon } from '@heroicons/react/24/outline';
+import SectionTextContent from '../../containers/SectionTextContent';
+import HeadingSection from '../../text/HeadingSection';
+import Description from '../../text/Description';
+import SectionSideContent from '../../containers/SectionSideContent';
+import HeadingInfo from '../../text/HeadingInfo';
 
 function DynamicCode() {
   return (
-    <Section
-      aria-labelledby='content-heading'
-      className=' text-indigo-950 bg-gradient-to-r from-indigo-50 to-plum-200 shadow-ind'
-    >
+    <Section theme='2col' color='plum' aria-labelledby='dynamiccode-heading'>
       {/* Description */}
-      <div>
-        <div>
-          <h2
-            id='content-heading'
-            className='flex gap-2 p-heading-rev text-violet-950'
-          >
-            Step 5: Make content dynamic
-          </h2>
-          <DividerHorizontal color='dark' className='lg:w-8/10' />
-        </div>
+      <SectionTextContent>
+        <HeadingSection>Step 5: Make content dynamic</HeadingSection>
 
-        <div className='flex-col-gap'>
+        <Description>
           <Paragraph>
             Now that your site is designed and coded, it’s time to bring it to
             life.
@@ -70,13 +63,13 @@ function DynamicCode() {
           <InfoText icon={CursorArrowRaysIcon}>
             Click each option to learn more.
           </InfoText>
-
-          <DividerHorizontal color='dark' className='lg:w-8/10' />
-        </div>
-      </div>
+        </Description>
+      </SectionTextContent>
 
       {/* Accordions */}
-      <div className='order-2 lg:order-1 flex-center-col gap-3'>
+      <SectionSideContent invert={true}>
+        <HeadingInfo>No-Code Content Tools:</HeadingInfo>
+
         {data.map((accordion) => (
           <Accordion key={accordion.title} title={accordion.title}>
             <div className='sm:px-5 py-2'>
@@ -84,7 +77,7 @@ function DynamicCode() {
                 {accordion.subTitle}
               </h3>
 
-              <Paragraph>
+              <Paragraph className='flex flex-col gap-1'>
                 <DividerHorizontal />
                 {accordion.description}
                 <DividerHorizontal />
@@ -92,7 +85,7 @@ function DynamicCode() {
 
               <ul className='p-div text-lg space-y-1'>
                 {accordion.bulletPoints.map((li) => (
-                  <li key={li.id}>
+                  <li key={li.id} className='flex gap-3'>
                     <span className='text-plum-500'>✦</span> {li.text}
                   </li>
                 ))}
@@ -100,7 +93,7 @@ function DynamicCode() {
             </div>
           </Accordion>
         ))}
-      </div>
+      </SectionSideContent>
     </Section>
   );
 }
