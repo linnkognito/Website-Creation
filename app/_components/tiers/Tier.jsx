@@ -2,21 +2,29 @@ import Section from '../containers/Section';
 import SectionTierInfo from '../containers/SectionTierInfo';
 import List from '../List';
 import ListItem from '../ListItem';
-import HeadingInfo from '../text/HeadingInfo';
 import HeadingSection from '../text/HeadingSection';
+import SectionTierPrice from '../containers/SectionTierPrice';
 
 function Tier({ tier }) {
-  const { id, heading, includedPages, includedFeatures, prices, addOns } = tier;
+  const {
+    id,
+    heading,
+    pages,
+    includedPages,
+    includedFeatures,
+    prices,
+    addOns,
+  } = tier;
 
   return (
     <Section color={id}>
-      <HeadingSection>{heading}</HeadingSection>
-
-      {/* Pages */}
+      <HeadingSection pages={pages}>{heading}</HeadingSection>
 
       <div className='flex flex-col gap-9 p-div'>
         {/* Included Pages/Sections */}
-        <SectionTierInfo heading='Included Sections'>
+        <SectionTierInfo
+          heading={id === 'starter' ? 'Included Sections' : 'Included Pages'}
+        >
           <List>
             {includedPages.map((page) => (
               <ListItem key={page.id} listItem={page} />
@@ -43,7 +51,7 @@ function Tier({ tier }) {
         </SectionTierInfo>
 
         {/* Price */}
-        <HeadingInfo theme='tier'>Price</HeadingInfo>
+        <SectionTierPrice heading='Price' prices={prices} tier={id} />
       </div>
     </Section>
   );

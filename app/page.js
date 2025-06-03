@@ -9,7 +9,9 @@ import PageContentWrapper from './_components/containers/PageContentWrapper';
 
 function Page() {
   return (
-    <PageContentWrapper heading='Website building steps'>
+    <PageContentWrapper
+      heading={{ id: 'steps', heading: 'Website building steps' }}
+    >
       <Purpose />
       <Content />
       <Design />

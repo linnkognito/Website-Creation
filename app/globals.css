@@ -73,7 +73,7 @@
   }
 
   .p-section {
-    @apply px-7 sm:px-12 py-7;
+    @apply px-7 sm:px-12 pt-12 pb-10;
   }
   .p-div {
     @apply px-5 py-4;

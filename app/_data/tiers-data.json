@@ -2,7 +2,7 @@
   {
     "id": "starter",
     "heading": "Starter",
-    "pages": "SPA (Single Page Application)",
+    "pages": "Single Page Application",
     "includedPages": [
       {
         "id": "hero",
@@ -39,14 +39,18 @@
       {
         "id": "cms",
         "label": "CMS integration",
-        "description": "Content Management dashboard for easy content updates & image uploads"
+        "description": "Dashboard for easy content updates & image uploads"
       },
       {
         "id": "performance",
         "label": "Basic performance optimization",
         "description": "Image compression, lazy loading"
       },
-      { "id": "responsive", "label": "Mobile responsive", "description": "" },
+      {
+        "id": "responsive",
+        "label": "Mobile responsive",
+        "description": "Optimized layout and styling for all screen sizes, from phones to desktops"
+      },
       {
         "id": "hosting",
         "label": "Hosting",
@@ -54,20 +58,28 @@
       }
     ],
     "prices": {
-      "template": { "label": "Template based design", "price": "300" },
-      "custom": { "label": "With custom design/styling", "price": "400–600" }
+      "template": {
+        "id": "template-starter",
+        "label": "Template based design",
+        "price": "$300"
+      },
+      "custom": {
+        "id": "custom-starter",
+        "label": "Custom design",
+        "price": "$400–$600"
+      }
     },
     "addOns": [
       {
         "id": "extra-section",
         "label": "Extra section",
-        "description": "",
+        "description": "Add an additional section such as FAQs, testimonials, or services",
         "price": "$50–$100"
       },
       {
         "id": "content-setup",
         "label": "Content setup",
-        "description": "",
+        "description": "I’ll place your text and images for you, styled and formatted to match the design",
         "price": "$100"
       },
       {
@@ -83,18 +95,30 @@
     "heading": "Standard",
     "pages": "4–5 pages",
     "includedPages": [
-      { "id": "hero", "label": "Hero", "description": "" },
-      { "id": "about", "label": "About", "description": "" },
+      {
+        "id": "hero",
+        "label": "Hero",
+        "description": "Intro section with headline, CTA, and visual content"
+      },
+      {
+        "id": "about",
+        "label": "About",
+        "description": "Your story, mission, or company background"
+      },
       {
         "id": "portfolio",
         "label": "Portfolio",
-        "description": "Advanced image gallery or case studies"
+        "description": "Showcase of work, products, or offerings with visual elements"
       },
-      { "id": "contact", "label": "Contact", "description": "" },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "description": "Form, social links, or contact details"
+      },
       {
         "id": "optional",
         "label": "Optional",
-        "description": "Testimonials or Services page"
+        "description": "Additional section like testimonials or services"
       }
     ],
     "includedFeatures": [
@@ -103,7 +127,11 @@
         "label": "Everything in basic tier",
         "description": ""
       },
-      { "id": "structure", "label": "Multi-page structure", "description": "" },
+      {
+        "id": "structure",
+        "label": "Multi-page structure",
+        "description": ""
+      },
       {
         "id": "customization",
         "label": "Customization",
@@ -126,8 +154,16 @@
       }
     ],
     "prices": {
-      "template": { "label": "Template based design", "price": "$500" },
-      "custom": { "label": "With custom design/styling", "price": "$500–700" }
+      "template": {
+        "id": "template-standard",
+        "label": "Template based design",
+        "price": "$500"
+      },
+      "custom": {
+        "id": "custom-standard",
+        "label": "Custom design",
+        "price": "$500–700"
+      }
     },
     "addOns": [
       {
@@ -182,24 +218,44 @@
   },
   {
     "id": "premium",
-    "pages": "4–7 pages",
     "heading": "Premium",
+    "pages": "4–7 pages",
     "includedPages": [
-      { "id": "hero", "label": "Hero", "description": "" },
-      { "id": "about", "label": "About", "description": "" },
-      { "id": "portfolio", "label": "Portfolio", "description": "" },
-      { "id": "contact", "label": "Contact", "description": "" },
+      {
+        "id": "hero",
+        "label": "Hero",
+        "description": "Intro section with headline, CTA, and visual content"
+      },
+      {
+        "id": "about",
+        "label": "About",
+        "description": "Your story, mission, or company background"
+      },
+      {
+        "id": "portfolio",
+        "label": "Portfolio",
+        "description": "Showcase of work, products, or offerings with visual elements"
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "description": "Form, social links, or contact details"
+      },
       {
         "id": "optional-1",
         "label": "Testimonials",
-        "description": "Optional"
+        "description": "Showcase user or client feedback and experiences"
       },
       {
         "id": "optional-2",
         "label": "Services page",
-        "description": "Optional"
+        "description": "Detailed overview of services or offerings"
       },
-      { "id": "blog", "label": "Blog", "description": "Optional" }
+      {
+        "id": "blog",
+        "label": "Blog",
+        "description": "List of articles, updates, or news posts"
+      }
     ],
     "includedFeatures": [
       {
@@ -232,11 +288,20 @@
         "label": "Optional: Light/Dark mode",
         "description": "Fully customizable color schemes"
       },
-      { "id": "report", "label": "Basic performance report", "description": "" }
+      {
+        "id": "report",
+        "label": "Basic performance report",
+        "description": ""
+      }
     ],
     "prices": {
-      "template": { "label": "Template based design", "price": "$800" },
+      "template": {
+        "id": "template-premium",
+        "label": "Template based design",
+        "price": "$800"
+      },
       "custom": {
+        "id": "custom-premium",
         "label": "Fully customized layout, animations, UI",
         "price": "$1000–1500"
       }
@@ -263,8 +328,7 @@
       {
         "id": "seo",
         "label": "Premium SEO setup",
-        "description": "Structured data, keyword optimization, sitemap",
-        "price": "$150+"
+        "description": "Structured data, keyword optimization, sitemap"
       },
       {
         "id": "optimization-package",
