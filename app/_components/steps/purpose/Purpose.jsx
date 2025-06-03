@@ -10,7 +10,12 @@ import SectionSideContent from '../../containers/SectionSideContent';
 
 function Purpose() {
   return (
-    <Section theme='2col' color='indigo' aria-labelledby='purpose-heading'>
+    <Section
+      theme='2col'
+      color='indigo'
+      aria-labelledby='purpose-heading'
+      first={true}
+    >
       <SectionTextContent>
         <HeadingSection color='light'>
           Step 1: Purpose & Direction

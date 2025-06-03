@@ -1,6 +1,6 @@
 function ListItemInfo({ listItem, icon: Icon = null }) {
   if (!listItem) return null;
-  const { label, price } = listItem;
+  const { label } = listItem;
 
   {
     Icon && <Icon className={`h-6 mr-1`} />;

@@ -11,9 +11,13 @@ function ListItem({
 
   const themes = {
     base: 'flex items-start gap-2 pb-3 border-b',
+    simple: 'flex items-start gap-2 pb-1 border-none tracking-tighter',
   };
 
   const colors = {
+    starter: 'text-lime-600',
+    standard: 'text-plum-600',
+    premium: 'text-indigo-600',
     lime: 'text-lime-600',
     indigo: 'text-indigo-400',
     plum: 'text-plum-400',
@@ -30,12 +34,12 @@ function ListItem({
   return (
     <li>
       <div className={`${themes[theme]} ${borders[color]}`}>
+        {/* List decoration */}
         {bullet && <span className={`mt-[1px] ${colors[color]}`}>✦</span>}
-
         {Icon && <Icon className={`h-6 mr-1 ${colors[color]}`} />}
 
         <div className='flex flex-col gap-1'>
-          <p className='font-bold'>
+          <p className={`${theme === 'base' ? 'font-bold' : ''}`}>
             {label} {price && `(${price})`}
           </p>
 

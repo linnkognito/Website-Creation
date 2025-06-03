@@ -17,8 +17,15 @@ function Tier({ tier }) {
   } = tier;
 
   return (
-    <Section color={id}>
-      <HeadingSection pages={pages}>{heading}</HeadingSection>
+    <Section
+      id={`tier-${id}`}
+      aria-labelledby={`${id}-heading`}
+      color={id}
+      lazyLoad={false}
+    >
+      <HeadingSection id={`${id}-heading`} pages={pages}>
+        {heading}
+      </HeadingSection>
 
       <div className='flex flex-col gap-9 p-div'>
         {/* Included Pages/Sections */}

@@ -6,6 +6,7 @@ function Section({
   children,
   theme = 'base',
   color = '',
+  lazyLoad = true,
   className = '',
   ...props
 }) {
@@ -26,17 +27,30 @@ function Section({
 
   return (
     <div>
-      <motion.section
-        layout={false}
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.2 }}
-        className={`w-full max-w-full p-section rounded-4xl will-change-[opacity,transform] ${themes[theme]} ${colorThemes[color]} ${className}`}
-        {...props}
-      >
-        {children}
-      </motion.section>
+      {lazyLoad ? (
+        <motion.section
+          layout={false}
+          initial={{ opacity: 0, y: 20 }}
+          {...(first
+            ? { animate: { opacity: 1, y: 0 } }
+            : {
+                whileInView: { opacity: 1, y: 0 },
+                viewport: { once: true, amount: 0.2 },
+              })}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
+          className={`scroll-mt-[110px] w-full max-w-full p-section rounded-4xl will-change-[opacity,transform] ${themes[theme]} ${colorThemes[color]} ${className}`}
+          {...props}
+        >
+          {children}
+        </motion.section>
+      ) : (
+        <section
+          className={`scroll-mt-[110px] w-full max-w-full p-section rounded-4xl ${themes[theme]} ${colorThemes[color]} ${className}`}
+          {...props}
+        >
+          {children}
+        </section>
+      )}
     </div>
   );
 }

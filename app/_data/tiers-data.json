@@ -2,7 +2,14 @@
   {
     "id": "starter",
     "heading": "Starter",
-    "pages": "Single Page Application",
+    "pages": "1 page (SPA)",
+    "infoCardList": [
+      "Single Page Layout",
+      "Basic SEO",
+      "Mobile responsive",
+      "CMS integration",
+      "Free hosting"
+    ],
     "includedPages": [
       {
         "id": "hero",
@@ -94,6 +101,13 @@
     "id": "standard",
     "heading": "Standard",
     "pages": "4–5 pages",
+    "infoCardList": [
+      "Multi-page layout",
+      "Advanced portfolio",
+      "CMS setup (Sanity)",
+      "Custom fonts & colors",
+      "Smooth animations"
+    ],
     "includedPages": [
       {
         "id": "hero",
@@ -220,6 +234,13 @@
     "id": "premium",
     "heading": "Premium",
     "pages": "4–7 pages",
+    "infoCardList": [
+      "Fully customizable layout",
+      "Advanced CMS controls",
+      "Premium animations",
+      "Dark/light mode",
+      "Performance tuning"
+    ],
     "includedPages": [
       {
         "id": "hero",
