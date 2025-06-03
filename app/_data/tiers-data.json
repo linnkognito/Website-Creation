@@ -1,0 +1,277 @@
+[
+  {
+    "id": "starter",
+    "heading": "Starter",
+    "pages": "SPA (Single Page Application)",
+    "includedPages": [
+      {
+        "id": "hero",
+        "label": "Homepage",
+        "description": "Intro section with headline, CTA, and visual content"
+      },
+      {
+        "id": "about",
+        "label": "About",
+        "description": "Your story, mission, or company background"
+      },
+      {
+        "id": "main",
+        "label": "Main feature page",
+        "description": "Portfolio, services, products, or core offering"
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "description": "Form, social links, or contact details"
+      },
+      {
+        "id": "footer",
+        "label": "Footer",
+        "description": "Navigation, legal, or extras (optional)"
+      }
+    ],
+    "includedFeatures": [
+      {
+        "id": "seo",
+        "label": "Basic SEO",
+        "description": "Search Engine Optimization"
+      },
+      {
+        "id": "cms",
+        "label": "CMS integration",
+        "description": "Content Management dashboard for easy content updates & image uploads"
+      },
+      {
+        "id": "performance",
+        "label": "Basic performance optimization",
+        "description": "Image compression, lazy loading"
+      },
+      { "id": "responsive", "label": "Mobile responsive", "description": "" },
+      {
+        "id": "hosting",
+        "label": "Hosting",
+        "description": "Deployment to Netlify or Vercel"
+      }
+    ],
+    "prices": {
+      "template": { "label": "Template based design", "price": "300" },
+      "custom": { "label": "With custom design/styling", "price": "400–600" }
+    },
+    "addOns": [
+      {
+        "id": "extra-section",
+        "label": "Extra section",
+        "description": "",
+        "price": "$50–$100"
+      },
+      {
+        "id": "content-setup",
+        "label": "Content setup",
+        "description": "",
+        "price": "$100"
+      },
+      {
+        "id": "domain-setup",
+        "label": "Domain setup",
+        "description": "Your domain name + DNS updates from domain provider",
+        "price": "$35"
+      }
+    ]
+  },
+  {
+    "id": "standard",
+    "heading": "Standard",
+    "pages": "4–5 pages",
+    "includedPages": [
+      { "id": "hero", "label": "Hero", "description": "" },
+      { "id": "about", "label": "About", "description": "" },
+      {
+        "id": "portfolio",
+        "label": "Portfolio",
+        "description": "Advanced image gallery or case studies"
+      },
+      { "id": "contact", "label": "Contact", "description": "" },
+      {
+        "id": "optional",
+        "label": "Optional",
+        "description": "Testimonials or Services page"
+      }
+    ],
+    "includedFeatures": [
+      {
+        "id": "everything-basic",
+        "label": "Everything in basic tier",
+        "description": ""
+      },
+      { "id": "structure", "label": "Multi-page structure", "description": "" },
+      {
+        "id": "customization",
+        "label": "Customization",
+        "description": "Choose your own web fonts & color palette"
+      },
+      {
+        "id": "portfolio-advanced",
+        "label": "Advanced portfolio features",
+        "description": "Video support, lightbox/project pages, sorting & optional filtering"
+      },
+      {
+        "id": "cms",
+        "label": "Sanity CMS setup",
+        "description": "For portfolio management"
+      },
+      {
+        "id": "animations",
+        "label": "More refined animations & transitions",
+        "description": "Smooth scrolling, hover effects, basic entrance animations"
+      }
+    ],
+    "prices": {
+      "template": { "label": "Template based design", "price": "$500" },
+      "custom": { "label": "With custom design/styling", "price": "$500–700" }
+    },
+    "addOns": [
+      {
+        "id": "extra-page",
+        "label": "Extra page",
+        "description": "",
+        "price": "$100+"
+      },
+      {
+        "id": "newsletter",
+        "label": "Newsletter integration",
+        "description": "Mailchimp, ConvertKit",
+        "price": "$100"
+      },
+      {
+        "id": "filtering",
+        "label": "Project filtering & tagging",
+        "description": "",
+        "price": "$100–150"
+      },
+      {
+        "id": "animations",
+        "label": "Custom animations",
+        "description": "Parallax, scroll-based",
+        "price": "$100–250"
+      },
+      {
+        "id": "customization",
+        "label": "Customization",
+        "description": "See Customization options tab",
+        "price": "$150–200"
+      },
+      {
+        "id": "dark-mode",
+        "label": "Dark/Light mode",
+        "description": "",
+        "price": "$30"
+      },
+      {
+        "id": "performance-report",
+        "label": "Performance report only",
+        "description": "",
+        "price": "$20"
+      },
+      {
+        "id": "optimization-package",
+        "label": "Full optimization package",
+        "description": "Speed, SEO fixes, image & font optimization",
+        "price": "$100"
+      }
+    ]
+  },
+  {
+    "id": "premium",
+    "pages": "4–7 pages",
+    "heading": "Premium",
+    "includedPages": [
+      { "id": "hero", "label": "Hero", "description": "" },
+      { "id": "about", "label": "About", "description": "" },
+      { "id": "portfolio", "label": "Portfolio", "description": "" },
+      { "id": "contact", "label": "Contact", "description": "" },
+      {
+        "id": "optional-1",
+        "label": "Testimonials",
+        "description": "Optional"
+      },
+      {
+        "id": "optional-2",
+        "label": "Services page",
+        "description": "Optional"
+      },
+      { "id": "blog", "label": "Blog", "description": "Optional" }
+    ],
+    "includedFeatures": [
+      {
+        "id": "everything-mid",
+        "label": "Everything in mid-tier",
+        "description": ""
+      },
+      {
+        "id": "portfolio-layout",
+        "label": "Fully customizable portfolio layout",
+        "description": "Grid, Slideshow or List + filtering & sorting"
+      },
+      {
+        "id": "animations",
+        "label": "Enhanced animations & interactions",
+        "description": "Spinners, Parallax, Hover effects, Transitions"
+      },
+      {
+        "id": "cms-custom",
+        "label": "Advanced Sanity CMS customization",
+        "description": "Edit homepage text, buttons, featured projects"
+      },
+      {
+        "id": "performance",
+        "label": "Basic performance optimization",
+        "description": "Lazy loading, compressed images, caching"
+      },
+      {
+        "id": "dark-mode",
+        "label": "Optional: Light/Dark mode",
+        "description": "Fully customizable color schemes"
+      },
+      { "id": "report", "label": "Basic performance report", "description": "" }
+    ],
+    "prices": {
+      "template": { "label": "Template based design", "price": "$800" },
+      "custom": {
+        "label": "Fully customized layout, animations, UI",
+        "price": "$1000–1500"
+      }
+    },
+    "addOns": [
+      {
+        "id": "extra-page",
+        "label": "Extra page",
+        "description": "",
+        "price": "$100"
+      },
+      {
+        "id": "ecommerce",
+        "label": "E-commerce/shop integration",
+        "description": "",
+        "price": "$300"
+      },
+      {
+        "id": "animations",
+        "label": "Custom animations",
+        "description": "GSAP, scroll effects, micro-interactions",
+        "price": "$150–300"
+      },
+      {
+        "id": "seo",
+        "label": "Premium SEO setup",
+        "description": "Structured data, keyword optimization, sitemap",
+        "price": "$150+"
+      },
+      {
+        "id": "optimization-package",
+        "label": "Full optimization package",
+        "description": "Speed, SEO fixes, image & font optimization",
+        "price": "$75"
+      }
+    ]
+  }
+]

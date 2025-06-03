@@ -10,15 +10,18 @@ function Section({
   ...props
 }) {
   const themes = {
-    base: 'flex flex-col',
+    base: 'flex flex-col shadow-ind',
     '2col':
       'flex flex-col lg:items-center lg:grid lg:grid-cols-2 gap-3 lg:gap-5 shadow-ind',
   };
 
   const colorThemes = {
     indigo: 'text-indigo-50 bg-indigo-500 selection:bg-violet-400',
-    lime: 'text-indigo-950 bg-gradient-to-br from-lime-200 to-white shadow-ind',
+    lime: 'text-indigo-950 bg-gradient-to-br from-lime-200 to-white',
     plum: 'text-indigo-950 bg-gradient-to-r from-indigo-50 to-plum-200',
+    starter: 'text-indigo-950 bg-gradient-to-r from-lime-100 to-indigo-50',
+    standard: 'text-indigo-950 bg-gradient-to-r from-plum-300 to-indigo-50',
+    premium: 'text-indigo-950 bg-gradient-to-r from-indigo-400 to-indigo-50',
   };
 
   return (

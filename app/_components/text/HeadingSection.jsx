@@ -1,4 +1,5 @@
 import DividerHorizontal from '../DividerHorizontal';
+import Paragraph from './Paragraph';
 
 function HeadingSection({
   children,
@@ -25,6 +26,7 @@ function HeadingSection({
       >
         {children}
       </Tag>
+
       <DividerHorizontal color={color} className='lg:w-8/10 pt-3 mb-5' />
     </div>
   );
