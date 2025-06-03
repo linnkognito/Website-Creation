@@ -5,26 +5,23 @@ import DividerHorizontal from '../../DividerHorizontal';
 import Paragraph from '../../text/Paragraph';
 import InfoStrip from '../../containers/InfoStrip';
 import HeadingInfo from '../../text/HeadingInfo';
+import SectionTextContent from '../../containers/SectionTextContent';
+import HeadingSection from '../../text/HeadingSection';
+import Description from '../../text/Description';
+import SectionSideContent from '../../containers/SectionSideContent';
 
 function TestingOptimization() {
   return (
-    <Section
-      theme='2col'
-      aria-labelledby='design-heading'
-      className=' text-indigo-950 bg-gradient-to-br from-lime-200 to-white shadow-ind'
-    >
-      <div>
-        <div>
-          <h2
-            id='design-heading'
-            className='flex gap-2 p-heading text-indigo-950'
-          >
-            Step 6: Optimization & Testing
-          </h2>
-          <DividerHorizontal color='dark' className='lg:w-8/10' />
-        </div>
+    <Section theme='2col' color='lime' aria-labelledby='testing-heading'>
+      <SectionTextContent>
+        <HeadingSection
+          id='testing-heading'
+          className='flex gap-2 p-heading text-indigo-950'
+        >
+          Step 6: Optimization & Testing
+        </HeadingSection>
 
-        <div className='flex-col-gap'>
+        <Description>
           <Paragraph>
             Now that the site is built, it’s time to polish everything behind
             the scenes.
@@ -39,11 +36,10 @@ function TestingOptimization() {
             You might not see these changes — but they make a big difference in
             how the site feels (and ranks).
           </Paragraph>
-        </div>
-        <DividerHorizontal color='dark' className='lg:w-8/10' />
-      </div>
+        </Description>
+      </SectionTextContent>
 
-      <div className='flex-col-gap items-center justify-center h-full'>
+      <SectionSideContent>
         <HeadingInfo>What I’ll do:</HeadingInfo>
         <ul className='flex-col-gap z-10'>
           {data.map((li) => (
@@ -52,7 +48,7 @@ function TestingOptimization() {
             </InfoStrip>
           ))}
         </ul>
-      </div>
+      </SectionSideContent>
     </Section>
   );
 }
