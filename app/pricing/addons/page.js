@@ -1,17 +1,13 @@
-import addons from '../_data/addons';
+import PageContentWrapper from '@/app/_components/containers/PageContentWrapper';
+import addons from '../../_data/addons';
 
-import PageContentWrapper from '../_components/containers/PageContentWrapper';
-import SectionSubtle from '../_components/containers/SectionSubtle';
-import Table from '../_components/Table';
-import HeadingInfo from '../_components/text/HeadingInfo';
+import Table from '@/app/_components/Table';
+import SectionSubtle from '@/app/_components/containers/SectionSubtle';
+import HeadingInfo from '@/app/_components/text/HeadingInfo';
 
 function Page() {
   return (
     <PageContentWrapper>
-      <PageContentWrapper
-        heading={{ id: 'pricing-heading', heading: 'Pricing' }}
-      ></PageContentWrapper>
-
       {/* Addons */}
       <PageContentWrapper
         tag='section'

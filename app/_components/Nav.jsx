@@ -5,7 +5,7 @@ function Nav({ links }) {
   const defaultLinks = [
     { label: 'Steps', href: '/' },
     { label: 'Tiers', href: '/tiers' },
-    { label: 'Pricing', href: '/pricing' },
+    { label: 'Add ons', href: '/pricing/addons' },
     // { label: 'Contact', href: '/contact' },
   ];
   const navLinks = links || defaultLinks;

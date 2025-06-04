@@ -9,7 +9,7 @@ function Page() {
     <PageContentWrapper heading={{ id: 'tiers-heading', heading: 'Tiers' }}>
       <TierInfoCards tiers={tiers} />
       {tiers.map((tier, i) => (
-        <Tier key={tier.id} tier={tier} first={i === 0} />
+        <Tier key={tier.id} tier={tier} />
       ))}
     </PageContentWrapper>
   );

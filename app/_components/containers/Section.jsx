@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 function Section({
   children,
   theme = 'base',
-  color = '',
-  first = 'false',
+  color = 'plum',
+  first = false,
   lazyLoad = true,
   className = '',
   ...props
@@ -16,7 +16,6 @@ function Section({
     '2col':
       'flex flex-col lg:items-center lg:grid lg:grid-cols-2 gap-3 lg:gap-5 shadow-ind',
   };
-
   const colorThemes = {
     indigo: 'text-indigo-50 bg-indigo-500 selection:bg-violet-400',
     lime: 'text-indigo-950 bg-gradient-to-br from-lime-200 to-white',
@@ -30,7 +29,6 @@ function Section({
     <div>
       {lazyLoad ? (
         <motion.section
-          layout={false}
           initial={{ opacity: 0, y: 20 }}
           {...(first
             ? { animate: { opacity: 1, y: 0 } }

@@ -116,7 +116,7 @@
         "rowLight": "bg-violet-50",
         "rowDark": "bg-violet-100"
       },
-      "tableHeadings": ["Add on", "Description", "Suggested Price"],
+      "tableHeadings": ["Add on", "Description", "Price"],
       "tableRows": [
         {
           "id": "newsletter-integration",
@@ -193,7 +193,7 @@
         "rowLight": "bg-plum-50",
         "rowDark": "bg-plum-100"
       },
-      "tableHeadings": ["Add-on", "Description", "Suggested Price"],
+      "tableHeadings": ["Add-on", "Description", "Price"],
       "tableRows": [
         {
           "id": "dark-mode-toggle",
@@ -273,7 +273,7 @@
         "rowLight": "bg-indigo-50",
         "rowDark": "bg-indigo-100"
       },
-      "tableHeadings": ["Add-on", "Description", "Suggested Price"],
+      "tableHeadings": ["Add-on", "Description", "Price"],
       "tableRows": [
         {
           "id": "optimization-audit",
@@ -335,7 +335,7 @@
         "rowLight": "bg-violet-50",
         "rowDark": "bg-violet-100"
       },
-      "tableHeadings": ["Add-on", "Description", "Suggested Price"],
+      "tableHeadings": ["Add-on", "Description", "Price"],
       "tableRows": [
         {
           "id": "cms-setup",
@@ -343,7 +343,7 @@
             { "id": "cms-setup-label", "text": "CMS setup" },
             {
               "id": "cms-setup-desc",
-              "text": "Sanity, Contentful, WordPress Headless, etc."
+              "text": "Sanity, Contentful, WordPress, etc."
             },
             { "id": "cms-setup-price", "text": "$100–200" }
           ]
@@ -356,32 +356,7 @@
               "id": "hosting-migration-desc",
               "text": "Move to Netlify/Vercel or custom host"
             },
-            { "id": "hosting-migration-price", "text": "$50–100" }
-          ]
-        },
-        {
-          "id": "handoff-package",
-          "cells": [
-            {
-              "id": "handoff-package-label",
-              "text": "Backup & handoff package"
-            },
-            {
-              "id": "handoff-package-desc",
-              "text": "ZIP with assets, instructions, and rollback options"
-            },
-            { "id": "handoff-package-price", "text": "$40–80" }
-          ]
-        },
-        {
-          "id": "training-video",
-          "cells": [
-            { "id": "training-video-label", "text": "Client training video" },
-            {
-              "id": "training-video-desc",
-              "text": "5–15 minute walkthrough of CMS or website usage"
-            },
-            { "id": "training-video-price", "text": "$75–150" }
+            { "id": "hosting-migration-price", "text": "$50" }
           ]
         }
       ]

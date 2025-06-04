@@ -1,7 +1,7 @@
 function SectionSubtle({ children, theme = 'base', className = '', ...props }) {
   const themes = {
     base: 'mb-10 p-div',
-    section: 'p-section',
+    section: 'p-section shadow-subtle',
   };
 
   return (

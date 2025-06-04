@@ -11,7 +11,7 @@ function Table({ table }) {
             {tableHeadings?.map((th) => (
               <th
                 key={th}
-                className='px-4 py-3 font-semibold text-xl text-left'
+                className='px-4 py-3 font-semibold text-lg sm:text-xl text-left'
               >
                 {th}
               </th>
@@ -23,10 +23,15 @@ function Table({ table }) {
           {tableRows.map((row, i) => (
             <tr
               key={row.id}
-              className={`${i % 2 === 0 ? 'bg-violet-50' : 'bg-violet-100'}`}
+              className={`${
+                i % 2 === 0 ? tableStyles.rowLight : tableStyles.rowDark
+              }`}
             >
               {row.cells.map((cell) => (
-                <td key={cell.id} className='px-4 py-3 first:font-bold'>
+                <td
+                  key={cell.id}
+                  className='px-4 py-3 first:font-bold last:font-bold'
+                >
                   {cell.text}
                 </td>
               ))}
