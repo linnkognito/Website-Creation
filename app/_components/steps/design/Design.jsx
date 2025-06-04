@@ -1,10 +1,10 @@
+import { CursorArrowRaysIcon } from '@heroicons/react/24/outline';
+
 import Section from '../../containers/Section';
-import DividerHorizontal from '../../DividerHorizontal';
 import Paragraph from '../../text/Paragraph';
 import Cube from '../../containers/Cube';
 import AnchorLink from '../../text/AnchorLink';
 import InfoText from '../../containers/InfoText';
-import { StarIcon } from '@heroicons/react/24/outline';
 import HeadingSection from '../../text/HeadingSection';
 import SectionTextContent from '../../containers/SectionTextContent';
 import Description from '../../text/Description';
@@ -36,9 +36,10 @@ function Design() {
             keywords, color palettes, inspo links, etc. You’ll get a mockup to
             review and tweak until it’s just right.
           </Paragraph>
+          <Paragraph>Once approved, I’ll move on to Step 4.</Paragraph>
 
-          <InfoText icon={StarIcon}>
-            Once approved, I’ll move on to Step 4.
+          <InfoText icon={CursorArrowRaysIcon}>
+            Click a cube to explore helpful links and creative inspiration.
           </InfoText>
         </Description>
       </SectionTextContent>
