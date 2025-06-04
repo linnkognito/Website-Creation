@@ -2,10 +2,10 @@ import Paragraph from '../text/Paragraph';
 
 function InfoText({ children, icon: Icon }) {
   return (
-    <Paragraph className='flex items-center gap-1 mt-1 font-black'>
-      <Icon className='h-6' />
-      {children}
-    </Paragraph>
+    <div className='flex items-start w-9/10 mt-1 font-black leading-tight'>
+      <Icon className='h-7 shrink-0' />
+      <Paragraph>{children}</Paragraph>
+    </div>
   );
 }
 
