@@ -6,6 +6,7 @@ function Section({
   children,
   theme = 'base',
   color = '',
+  first = 'false',
   lazyLoad = true,
   className = '',
   ...props

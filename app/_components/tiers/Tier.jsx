@@ -4,6 +4,11 @@ import List from '../List';
 import ListItem from '../ListItem';
 import HeadingSection from '../text/HeadingSection';
 import SectionTierPrice from '../containers/SectionTierPrice';
+import Link from 'next/link';
+import {
+  ArrowDownRightIcon,
+  ArrowRightIcon,
+} from '@heroicons/react/24/outline';
 
 function Tier({ tier }) {
   const {
@@ -49,7 +54,10 @@ function Tier({ tier }) {
         </SectionTierInfo>
 
         {/* Add ons */}
-        <SectionTierInfo heading='Add Ons'>
+        <SectionTierInfo
+          heading='Add Ons'
+          link={{ href: '/pricing/addons', label: 'See all Add Ons' }}
+        >
           <List>
             {addOns.map((addon) => (
               <ListItem key={addon.id} color='lime' listItem={addon} />

@@ -16,9 +16,13 @@ function TierInfoCard({ tier }) {
   };
 
   return (
-    <Link href={`#tier-${id}`} className='w-full md:max-w-1/3'>
+    <Link href={`#tier-${id}`} className='w-full lg:max-w-1/3'>
       <div
-        className={`flex flex-col only-sm:flex-row only-sm:justify-between gap-3 sm:gap-4 w-full min-h-full p-div-lg rounded-2xl shadow-subtle cursor-pointer ${colorThemes[id]}`}
+        className={`flex 
+          flex-col gap-3 
+          sm:flex-row sm:justify-between sm:gap-4
+          lg:flex-col lg:justify-normal lg:gap-3 
+          w-full min-h-full p-div-lg rounded-2xl shadow-subtle cursor-pointer ${colorThemes[id]}`}
       >
         <div className='p-div'>
           <h2 className='font-black text-3xl sm:text-4xl'>{heading}</h2>
@@ -30,7 +34,7 @@ function TierInfoCard({ tier }) {
           </p>
         </div>
 
-        <div className='p-div pt-5 only-sm:mr-5'>
+        <div className='p-div pt-5 sm:min-w-1/2'>
           <List theme='simple' className='min-w-[180px]'>
             {infoCardList?.map((li) => (
               <ListItem

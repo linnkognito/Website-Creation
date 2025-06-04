@@ -17,7 +17,7 @@ function SectionTierPrice({ heading = '', prices, tier = '' }) {
       <HeadingInfo theme='tier'>{heading}</HeadingInfo>
 
       <div
-        className={`p-div bg-white rounded-b-2xl text-lg shadow-subtle overflow-hidden`}
+        className={`p-div bg-white rounded-b-2xl text-lg sm:text-xl shadow-subtle overflow-hidden`}
       >
         <div
           key={template.id}

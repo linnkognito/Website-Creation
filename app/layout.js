@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`bg-violet-300 overflow-y-auto ${dosis.variable} ${qs.variable} antialiased`}
+        className={`bg-gradient-to-br from-violet-300 to-violet-50 overflow-y-auto ${dosis.variable} ${qs.variable} antialiased`}
       >
         <Header />
         <main className='flex-center w-full max-w-screen px-3 sm:px-5 py-4'>

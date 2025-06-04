@@ -1,0 +1,390 @@
+[
+  {
+    "id": "content-setup",
+    "emoji": "🔧",
+    "heading": "Content & Setup",
+    "table": {
+      "tableStyles": {
+        "heading": "bg-indigo-500 text-indigo-50",
+        "rowLight": "bg-indigo-50",
+        "rowDark": "bg-indigo-100"
+      },
+      "tableHeadings": ["Add on", "Description", "Price"],
+      "tableRows": [
+        {
+          "id": "extra-section",
+          "cells": [
+            { "id": "extra-section-label", "text": "Extra section" },
+            {
+              "id": "extra-section-desc",
+              "text": "Add a section like FAQs, testimonials, or services"
+            },
+            { "id": "extra-section-price", "text": "$50–100" }
+          ]
+        },
+        {
+          "id": "extra-page",
+          "cells": [
+            { "id": "extra-page-label", "text": "Extra page" },
+            {
+              "id": "extra-page-desc",
+              "text": "Fully designed standalone page (e.g. Blog, Services, Pricing)"
+            },
+            { "id": "extra-page-price", "text": "$100+" }
+          ]
+        },
+        {
+          "id": "content-placement",
+          "cells": [
+            { "id": "content-placement-label", "text": "Content placement" },
+            {
+              "id": "content-placement-desc",
+              "text": "I'll place and style your provided text/images across the site"
+            },
+            { "id": "content-placement-price", "text": "$100" }
+          ]
+        },
+        {
+          "id": "custom-color-theme",
+          "cells": [
+            { "id": "custom-color-theme-label", "text": "Custom color theme" },
+            {
+              "id": "custom-color-theme-desc",
+              "text": "Tailored color palette based on your brand or moodboard"
+            },
+            { "id": "custom-color-theme-price", "text": "$30" }
+          ]
+        },
+        {
+          "id": "domain-setup",
+          "cells": [
+            { "id": "domain-setup-label", "text": "Domain setup" },
+            {
+              "id": "domain-setup-desc",
+              "text": "Pointing your custom domain + DNS config"
+            },
+            { "id": "domain-setup-price", "text": "$35" }
+          ]
+        },
+        {
+          "id": "newsletter-integration",
+          "cells": [
+            {
+              "id": "newsletter-integration-label",
+              "text": "Newsletter integration"
+            },
+            {
+              "id": "newsletter-integration-desc",
+              "text": "Mailchimp, ConvertKit, or similar embedded signup form"
+            },
+            { "id": "newsletter-integration-price", "text": "$100" }
+          ]
+        },
+        {
+          "id": "basic-seo-audit",
+          "cells": [
+            { "id": "basic-seo-audit-label", "text": "Basic SEO audit" },
+            {
+              "id": "basic-seo-audit-desc",
+              "text": "Check for metadata, headings, link structure, and accessibility basics"
+            },
+            { "id": "basic-seo-audit-price", "text": "$40" }
+          ]
+        },
+        {
+          "id": "performance-boost",
+          "cells": [
+            { "id": "performance-boost-label", "text": "Performance boost" },
+            {
+              "id": "performance-boost-desc",
+              "text": "Image compression, lazy loading, font and script optimization"
+            },
+            { "id": "performance-boost-price", "text": "$75" }
+          ]
+        }
+      ]
+    }
+  },
+
+  {
+    "id": "functionality",
+    "emoji": "🧩",
+    "heading": "Functionality",
+    "table": {
+      "tableStyles": {
+        "heading": "bg-violet-500 text-violet-50",
+        "rowLight": "bg-violet-50",
+        "rowDark": "bg-violet-100"
+      },
+      "tableHeadings": ["Add on", "Description", "Suggested Price"],
+      "tableRows": [
+        {
+          "id": "newsletter-integration",
+          "cells": [
+            {
+              "id": "newsletter-integration-label",
+              "text": "Newsletter integration"
+            },
+            {
+              "id": "newsletter-integration-desc",
+              "text": "Mailchimp, ConvertKit, Buttondown, etc."
+            },
+            { "id": "newsletter-integration-price", "text": "$100" }
+          ]
+        },
+        {
+          "id": "contact-form",
+          "cells": [
+            { "id": "contact-form-label", "text": "Contact form setup" },
+            {
+              "id": "contact-form-desc",
+              "text": "Working form with validation, email forwarding"
+            },
+            { "id": "contact-form-price", "text": "$50–100" }
+          ]
+        },
+        {
+          "id": "blog-functionality",
+          "cells": [
+            { "id": "blog-functionality-label", "text": "Blog functionality" },
+            {
+              "id": "blog-functionality-desc",
+              "text": "CMS-based blog structure, dynamic routing"
+            },
+            { "id": "blog-functionality-price", "text": "$150–200" }
+          ]
+        },
+        {
+          "id": "project-filtering",
+          "cells": [
+            {
+              "id": "project-filtering-label",
+              "text": "Project filtering/tagging"
+            },
+            {
+              "id": "project-filtering-desc",
+              "text": "Filter/sort portfolio or products"
+            },
+            { "id": "project-filtering-price", "text": "$100–150" }
+          ]
+        },
+        {
+          "id": "search-bar",
+          "cells": [
+            { "id": "search-bar-label", "text": "Search bar" },
+            {
+              "id": "search-bar-desc",
+              "text": "Client-side search (static or dynamic)"
+            },
+            { "id": "search-bar-price", "text": "$100–200" }
+          ]
+        }
+      ]
+    }
+  },
+
+  {
+    "id": "design-ux",
+    "emoji": "🎨",
+    "heading": "Design & UX",
+    "table": {
+      "tableStyles": {
+        "heading": "bg-plum-500 text-plum-50",
+        "rowLight": "bg-plum-50",
+        "rowDark": "bg-plum-100"
+      },
+      "tableHeadings": ["Add-on", "Description", "Suggested Price"],
+      "tableRows": [
+        {
+          "id": "dark-mode-toggle",
+          "cells": [
+            {
+              "id": "dark-mode-toggle-label",
+              "text": "Dark/Light mode toggle"
+            },
+            {
+              "id": "dark-mode-toggle-desc",
+              "text": "User-controlled theme toggle"
+            },
+            { "id": "dark-mode-toggle-price", "text": "$30–60" }
+          ]
+        },
+        {
+          "id": "custom-fonts",
+          "cells": [
+            { "id": "custom-fonts-label", "text": "Custom fonts" },
+            {
+              "id": "custom-fonts-desc",
+              "text": "Load and style unique font pairings"
+            },
+            { "id": "custom-fonts-price", "text": "$30–50" }
+          ]
+        },
+        {
+          "id": "font-pairing-consult",
+          "cells": [
+            {
+              "id": "font-pairing-consult-label",
+              "text": "Font pairing consultation"
+            },
+            {
+              "id": "font-pairing-consult-desc",
+              "text": "Help pick and implement font pair"
+            },
+            { "id": "font-pairing-consult-price", "text": "$50–75" }
+          ]
+        },
+        {
+          "id": "custom-animations",
+          "cells": [
+            { "id": "custom-animations-label", "text": "Custom animations" },
+            {
+              "id": "custom-animations-desc",
+              "text": "GSAP, scroll effects, parallax, micro-interactions"
+            },
+            { "id": "custom-animations-price", "text": "$150–300" }
+          ]
+        },
+        {
+          "id": "illustration-icons",
+          "cells": [
+            {
+              "id": "illustration-icons-label",
+              "text": "Illustration or icon styling"
+            },
+            {
+              "id": "illustration-icons-desc",
+              "text": "Custom icon system, themed graphics"
+            },
+            { "id": "illustration-icons-price", "text": "$100+" }
+          ]
+        }
+      ]
+    }
+  },
+
+  {
+    "id": "performance-seo",
+    "emoji": "🚀",
+    "heading": "Performance & SEO",
+    "table": {
+      "tableStyles": {
+        "heading": "bg-indigo-500 text-indigo-50",
+        "rowLight": "bg-indigo-50",
+        "rowDark": "bg-indigo-100"
+      },
+      "tableHeadings": ["Add-on", "Description", "Suggested Price"],
+      "tableRows": [
+        {
+          "id": "optimization-audit",
+          "cells": [
+            { "id": "optimization-audit-label", "text": "Optimization audit" },
+            {
+              "id": "optimization-audit-desc",
+              "text": "Deep speed check (Lighthouse, GTmetrix), image/font fix suggestions"
+            },
+            { "id": "optimization-audit-price", "text": "$75–150" }
+          ]
+        },
+        {
+          "id": "seo-package",
+          "cells": [
+            { "id": "seo-package-label", "text": "SEO optimization package" },
+            {
+              "id": "seo-package-desc",
+              "text": "Structured data, meta tags, sitemap, accessibility fixes"
+            },
+            { "id": "seo-package-price", "text": "$100–200" }
+          ]
+        },
+        {
+          "id": "accessibility-audit",
+          "cells": [
+            {
+              "id": "accessibility-audit-label",
+              "text": "Accessibility audit"
+            },
+            {
+              "id": "accessibility-audit-desc",
+              "text": "Manual test + improvements checklist (WCAG basics)"
+            },
+            { "id": "accessibility-audit-price", "text": "$50–100" }
+          ]
+        },
+        {
+          "id": "analytics-setup",
+          "cells": [
+            { "id": "analytics-setup-label", "text": "Analytics integration" },
+            {
+              "id": "analytics-setup-desc",
+              "text": "Setup Google Analytics / Plausible / Fathom"
+            },
+            { "id": "analytics-setup-price", "text": "$30–75" }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "hosting-delivery",
+    "emoji": "📦",
+    "heading": "Hosting & Delivery",
+    "table": {
+      "tableStyles": {
+        "heading": "bg-violet-500 text-violet-50",
+        "rowLight": "bg-violet-50",
+        "rowDark": "bg-violet-100"
+      },
+      "tableHeadings": ["Add-on", "Description", "Suggested Price"],
+      "tableRows": [
+        {
+          "id": "cms-setup",
+          "cells": [
+            { "id": "cms-setup-label", "text": "CMS setup" },
+            {
+              "id": "cms-setup-desc",
+              "text": "Sanity, Contentful, WordPress Headless, etc."
+            },
+            { "id": "cms-setup-price", "text": "$100–200" }
+          ]
+        },
+        {
+          "id": "hosting-migration",
+          "cells": [
+            { "id": "hosting-migration-label", "text": "Hosting migration" },
+            {
+              "id": "hosting-migration-desc",
+              "text": "Move to Netlify/Vercel or custom host"
+            },
+            { "id": "hosting-migration-price", "text": "$50–100" }
+          ]
+        },
+        {
+          "id": "handoff-package",
+          "cells": [
+            {
+              "id": "handoff-package-label",
+              "text": "Backup & handoff package"
+            },
+            {
+              "id": "handoff-package-desc",
+              "text": "ZIP with assets, instructions, and rollback options"
+            },
+            { "id": "handoff-package-price", "text": "$40–80" }
+          ]
+        },
+        {
+          "id": "training-video",
+          "cells": [
+            { "id": "training-video-label", "text": "Client training video" },
+            {
+              "id": "training-video-desc",
+              "text": "5–15 minute walkthrough of CMS or website usage"
+            },
+            { "id": "training-video-price", "text": "$75–150" }
+          ]
+        }
+      ]
+    }
+  }
+]
